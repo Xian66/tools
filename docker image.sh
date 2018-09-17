@@ -14,6 +14,7 @@ export THIRDPARTY_IMAGE_VERSION=0.4.6
 export ARCH=$(echo "$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')-$(uname -m | sed 's/x86_64/amd64/g')")
 export MARCH=$(uname -m)
 
+
 printHelp() {
   echo "Usage: bootstrap.sh [version [ca_version [thirdparty_version]]] [options]"
   echo
